@@ -4,8 +4,11 @@ import gestionaleDipendenti.Dipendente.Dipartimento;
 import gestionaleDipendenti.Dipendente.Livello;
 
 public class GestioneDipendenti {
+	// public void funzioneDaChiamareDallaMain ( ) {}
 
 	public static void main(String[] args) {
+		GestioneDipendenti gd = new GestioneDipendenti();
+		//gd.funzioneDaChiamareDallaMain();
 		// TODO Auto-generated method stub
 		Dipendente dip1 = new Dipendente(Dipartimento.PRODUZIONE, "123abc");
 		Dipendente dip2 = new Dipendente(Dipartimento.PRODUZIONE, "456def");
@@ -29,10 +32,10 @@ public class GestioneDipendenti {
 	//	somma = somma + Dipendente.calcolaPaga(dip3, 5);
 	//	somma += Dipendente.calcolaPaga(dip4, 5);
 		
-		double somma = dip1.calcolaPaga(5);
-		somma += dip2.calcolaPaga(5);
-		somma += dip3.calcolaPaga(5);
-		somma += dip4.calcolaPaga(5);
+		double somma = dip1.calcolaPaga(5, true);
+		somma += dip2.calcolaPaga(5, true);
+		somma += dip3.calcolaPaga(5 ,true);
+		somma += dip4.calcolaPaga(5, true);
 //
 		System.out.println("la somma degli stipendi è:" + somma);
 		
